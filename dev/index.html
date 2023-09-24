@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>EV KICKS</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<h2 style="text-align: center; margin: 40px auto; color: black">
+		Pages
+	</h2>
+	<ul class="mm" style="display: flex; max-width: 800px; margin: 0 auto 50px; flex-wrap: wrap;">
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="main.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Главная</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="back.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Возврат</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="contacts.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Контакты</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="delivery.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Доставка</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="pay.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Оплата</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="error.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Ошибка</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="search.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Поиск</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="card.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Карточка</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="card2.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Нет в
+				наличии</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="catalog.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Каталог</a>
+		</li>
+	</ul>
+	<div class="d-flex"
+		style="justify-content: center; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
+		<a href="#" class="btn btn_1 a1" style="margin: 20px;">
+			В каталог <img src="/img/arr.svg" alt="" class="svg">
+		</a>
+		<a href="#" class="btn btn_2 a2" style="margin: 20px;">
+			Оформить индивидуальный заказ
+		</a>
+		<a href="#" class="btn btn_3" style="margin: 20px;">
+			Показать еще <img src="/img/arr2.svg" alt="" class="svg">
+		</a>
+	</div>
+	<div class="popup__bg" id="popup">
+		<div class="popup">
+			<img src="/img/close.svg" alt="" class="close-popup">
+			<div class="popup__wrap">
+				<p class="popup__title">
+					Оформление <br> индивидуального заказа
+				</p>
+				<p class="popup__text">
+					Укажите данные для заказа, мы свяжемся с <br> Вами в ближайшее время для подтверждения.
+				</p>
+				<form action="#" class="popup__form">
+					<input type="text" placeholder="Укажите модель или вставьте ссылку с сайта">
+					<input type="text" placeholder="Укажите размер обуви">
+					<input type="text" placeholder="Желаемый цвет">
+					<input type="text" placeholder="Ваше имя">
+					<input type="tel" placeholder="Контактный телефон" class="tel">
+					<button class="btn">
+						Оформить заказ
+					</button>
+				</form>
+				<p class="popup__sub">
+					Отправляя заявку Вы соглашаетесь с <a href="#" target="blank"> политикой конфиденциальности </a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg2" id="popup2">
+		<div class="popup2">
+			<img src="/img/close.svg" alt="" class="close-popup2">
+			<div class="popup__wrap">
+				<p class="popup__title">
+					Как это работает?
+				</p>
+				<ul class="popup__list">
+					<li>
+						Для размещения индивидуального заказа на интересующий Вас товар необходимо отправить заявку.
+					</li>
+					<li>
+						Менеджер свяжется по Вашей заявке и уточнит детали по заказу: подберет модель или размер, уточнит
+						цену и предварительные сроки доставки по Вашему адресу.
+					</li>
+					<li>
+						Все индивидуальные заказы оформляются по предоплате, менеджер предоставит Вам всю информацию о
+						доступных способах оплаты.
+					</li>
+					<li>
+						При поступлении товар проходит многоступенчатые проверки на оригинальность нашей командой
+						специалистов.
+					</li>
+					<li>
+						Товар надежно упаковывается и подготавливается к отправке. С вами свяжется Ваш персональный
+						менеджер, уточнит информацию по доставке и предоставит трек-номер для отслеживания заказа.
+					</li>
+				</ul>
+				<p class="popup__info">
+					По любым вопросам, связанным с Вашим заказом, наша команда персональных менеджером всегда на связи в
+					чате на сайте, в личных сообщениях в наших социальных сетях или по электронной почте info@ev-kicks.ru.
+				</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/all.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+body
+   font-family: 'Inter', sans-serif
+   background: #ffff
+   font-weight: 400
+   font-size: 16px
+   line-height: 26px
+   border-radius: 30px
+   color: #252525
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $black
+      opacity: 0.6
+.container
+   padding: 0 15px
+   max-width: 1475px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex, .q
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-family: 'Montserrat', sans-serif
+   color: #FFF
+   font-size: 66px
+   font-style: normal
+   position: relative
+   z-index: 1
+   font-weight: 900
+   line-height: normal
+   text-transform: uppercase
+   margin: 0
+   span 
+      -webkit-text-stroke: 2px white 
+      color: transparent
+      display: block
+      line-height: normal
+      font-family: 'Proxima Nova Bl'
+h2 
+   margin: 0
+   color: $black
+   font-size: 35px
+   font-weight: 700
+   line-height: normal
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $black !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $black !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $black
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $black
+   border-radius: 6px
+.panel__text::-webkit-scrollbar,
+.panel__text::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+.panel__text::-webkit-scrollbar-track,
+.panel__text::-webkit-scrollbar-track 
+   background: white
+   border-radius: 3px
+.panel__text::-webkit-scrollbar-thumb,
+.panel__text::-webkit-scrollbar-thumb 
+   background-color: $black
+   border-radius: 6px
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5
+   border-radius: 1000px
+   background: #252525
+   color: #FFF
+   font-size: 14px
+   width: 217.229px
+   border: 1px solid #252525
+   height: 53.939px
+   .svg 
+      margin-left: 30px
+   &:hover 
+      background: transparent 
+      border: 1px solid #252525
+      color: #252525
+      opacity: 1
+      .svg 
+         path 
+            fill: #252525
+   &_2
+      border: 1px solid #FFF
+      background: #FFF
+      color: $black 
+      font-size: 17px
+      width: 375.392px
+      height: 62.388px
+      &:hover
+         background: $black
+         color: white
+         opacity: 1
+   &_3
+      background: transparent
+      color: #252525
+      .svg 
+         margin: 3px 0 0 7px
+      &:hover 
+         background: #252525
+         color: white 
+         opacity: 1
+         .svg 
+            path 
+               fill: white
