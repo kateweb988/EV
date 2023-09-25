@@ -990,7 +990,14 @@ document.addEventListener("DOMContentLoaded", () => {
     menu.classList.toggle('active');
   });
 });
-
+document.addEventListener("DOMContentLoaded", () => {
+  let menuBtn2 = document.querySelector('.menu-btn2');
+  let menu2 = document.querySelector('.menu2');
+  menuBtn2.addEventListener('click', function () {
+    menuBtn2.classList.toggle('active');
+    menu2.classList.toggle('active');
+  });
+});
 document.addEventListener("DOMContentLoaded", () => {
   // svg
   $(function () {
