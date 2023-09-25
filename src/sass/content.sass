@@ -87,6 +87,7 @@ input:-moz-placeholder
          color: #525252 !important
       button 
          width: 100%
+         height: 63px
          transition: 0.5s
    &__sub 
       text-align: center
@@ -189,7 +190,7 @@ input:-moz-placeholder
    background-color: $black !important
    opacity: 1
 .pop 
-   padding: 53px 0
+   padding: 53px 0 109px
    &__area 
       justify-content: center
       margin-top: 20px
@@ -237,16 +238,17 @@ input:-moz-placeholder
    .accordeon__button.active:after, .accordeon__button2.active:after, .accordeon__button3.active:after, .accordeon__button4.active:after, .accordeon__button5.active:after, .accordeon__button6.active:after
       content: ""
       position: absolute
-      right: -25px
+      right: -27px
       background: url(/img/own-arrow.svg) no-repeat !important
-      width: 15px
+      width: 20px
       left: inherit
-      height: 15px
-      top: 4px
+      height: 20px
+      top: 2px
+      bottom: inherit
       margin-bottom: -20px
       transition: all 0.5s ease
-      transform: rotate(180deg)
-      -webkit-transform: rotate(180deg)
+      transform: rotate(0deg)
+      -webkit-transform: rotate(0deg)
    .accordeon__button, .accordeon__button2, .accordeon__button3, .accordeon__button4, .accordeon__button5, .accordeon__button6
       width: max-content
       text-align: left
@@ -267,8 +269,9 @@ input:-moz-placeholder
       margin-top: 24px
    .accordeon_1
       .panel__text
-         height: 123px
+         height: 145px
          padding: 30px 20px 10px
+         overflow-y: hidden
    .accordeon_4
       .panel__text
          width: 160px
@@ -279,13 +282,14 @@ input:-moz-placeholder
    .form_control input[type="number"] 
       color: #ABABAB
       width: auto
-      height: auto
+      height: 20px
       font-size: 14px
       border: none
       background: transparent
       position: absolute
-      top: 9px
+      top: 50%
       right: inherit
+      margin-top: -10px
       left: 45px
       &:focus 
          border: none
@@ -362,6 +366,7 @@ input:-moz-placeholder
       color: #20252d
       font-size: 14px
       display: block
+      font-weight: 700
       position: relative
       z-index: 1
       margin: 24px 0 12px
@@ -476,7 +481,7 @@ input:-moz-placeholder
                      bottom: -33px
                      left: 50%
                      width: 200px
-                     height: 2px
+                     height: 1px
                      background: $black
                      margin-left: -100px
 .swiper-button-next, .swiper-button-prev
@@ -780,7 +785,9 @@ input:-moz-placeholder
    &__arrows 
       position: relative
    &__last 
-      margin: 40px 0
+      padding: 70px 0
+      border-top: 1px solid #F1F1F1
+      border-bottom: 1px solid #F1F1F1
       .pop__box
          margin-top: 90px
       h2 
@@ -881,7 +888,10 @@ input[type=range]::-moz-range-thumb
    cursor: pointer
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button 
-   opacity: 1
+   -webkit-appearance: none
+   appearance: none
+   margin: 0
+   opacity: 0
 input[type="range"] 
    -webkit-appearance: none
    appearance: none
@@ -1088,18 +1098,24 @@ input[type="range"]
          width: 160px
          height: auto
          padding: 20px 20px 10px
+   .new2 
+      position: relative
+      top: 0
+      left: 0
+      margin-top: 10px
    .form_control
       margin-top: 0  
    .form_control input[type="number"] 
       color: #ABABAB
       width: auto
-      height: auto
+      height: 20px
       font-size: 14px
       border: none
       background: transparent
       position: absolute
-      top: 8px
+      top: 50%
       right: inherit
+      margin-top: -10px
       left: 45px
       &:focus 
          border: none
@@ -1674,7 +1690,7 @@ input[type="range"]
          color: #525252
          font-size: 13px
          line-height: 20px
-         margin-right: 10px
+         margin-right: 10px !important
    &__bottom 
       align-items: center
       justify-content: space-between
@@ -1724,9 +1740,10 @@ input[type="range"]
       display: block
       margin-bottom: 5px
    &__link 
-      text-decoration-line: underline
       color: #525252
       font-size: 13px
+      border-bottom: 1px solid #525252
+      width: max-content
    &__socials 
       margin-top: 73px
    &__block 
@@ -1838,6 +1855,15 @@ input[type="range"]
          background: #030A0B
          width: 100%
          &_3 
+            &:after 
+               background-color: rgba(0, 0, 0, 0.2)
+               height: 100%
+               position: absolute
+               width: 100%
+               bottom: 0
+               left: 0
+               content: ""
+               display: block
             h1 
                color: $black
                font-size: 46px
@@ -2038,6 +2064,7 @@ picture
          width: 100%
          margin: -10px auto 0
          max-width: 360px
+         font-size: 15px
       .btn 
          margin: 36px auto 0
 [class*="ymaps-"][class*="-ground-pane"] 
@@ -2119,3 +2146,20 @@ picture
       position: relative
       bottom: 5px
       line-height: normal
+.new 
+   position: absolute
+   bottom: 0
+   left: 0
+.page .info__bg_2 
+   height: 410%
+.new2 
+   justify-content: space-between
+   align-items: center
+   width: 100%
+   position: absolute
+   bottom: 15px
+   left: 23px
+   max-width: 270px
+   p 
+      color: #3D3D3D
+      font-size: 12px
