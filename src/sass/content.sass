@@ -205,25 +205,27 @@ input:-moz-placeholder
       top: 258px
       left: 0px
       margin: 44px 0 40px
-   .accordeon, .accordeon2, .accordeon3, .accordeon4
+   .accordeon, .accordeon2, .accordeon3, .accordeon4,  .accordeon5, .accordeon6, .accordeon7, .accordeon8, .accordeon9
       padding: 0
       margin: 0
       margin-right: 80px
       position: relative
       border: none
-   .accordeon__panel, .accordeon__panel2, .accordeon__panel3, .accordeon__panel4
+   .accordeon__panel, .accordeon__panel2, .accordeon__panel3, .accordeon__panel4,  .accordeon__panel5, .accordeon__panel6, .accordeon__panel7, .accordeon__panel8, .accordeon__panel9
       position: absolute
       top: 10px
       left: 0px
       z-index: 2
-   .panel__text, .panel__text2, .panel__text3, .panel__text4
+      transition: all 0s ease
+   .panel__text, .panel__text2, .panel__text3, .panel__text4, .panel__text5, .panel__text6, .panel__text7, .panel__text8, .panel__text9
       border-radius: 10px
       padding: 30px
       width: 310px
       padding-top: 30px
+      transition: all 0s ease
       box-sizing: border-box
       background: #F5F5F5
-   .accordeon__button:after, .accordeon__button2:after, .accordeon__button3:after, .accordeon__button4:after, .accordeon__button5:after, .accordeon__button6:after 
+   .accordeon__button:after, .accordeon__button2:after, .accordeon__button3:after, .accordeon__button4:after, .accordeon__button5:after, .accordeon__button6:after, .accordeon__button7:after, .accordeon__button8:after, .accordeon__button9:after
       content: ""
       position: absolute
       right: -27px
@@ -235,7 +237,7 @@ input:-moz-placeholder
       bottom: inherit
       margin-bottom: -20px
       transition: all 0.5s ease
-   .accordeon__button.active:after, .accordeon__button2.active:after, .accordeon__button3.active:after, .accordeon__button4.active:after, .accordeon__button5.active:after, .accordeon__button6.active:after
+   .accordeon__button.active:after, .accordeon__button2.active:after, .accordeon__button3.active:after, .accordeon__button4.active:after, .accordeon__button5.active:after, .accordeon__button6.active:after, .accordeon__button7.active:after, .accordeon__button8.active:after, .accordeon__button9.active:after
       content: ""
       position: absolute
       right: -27px
@@ -249,7 +251,7 @@ input:-moz-placeholder
       transition: all 0.5s ease
       transform: rotate(0deg)
       -webkit-transform: rotate(0deg)
-   .accordeon__button, .accordeon__button2, .accordeon__button3, .accordeon__button4, .accordeon__button5, .accordeon__button6
+   .accordeon__button, .accordeon__button2, .accordeon__button3, .accordeon__button4, .accordeon__button5, .accordeon__button6, .accordeon__button7, .accordeon__button8, .accordeon__button9
       width: max-content
       text-align: left
       border: none
@@ -1086,9 +1088,17 @@ input[type="range"]
    top: -5000px
    display: none
 .cat  
+   .accordion-container
+      max-width: 100%
+   .set > a.active
+      background: url(/img/minus.svg) no-repeat 95% 0% !important
+   .set > a
+      background: url(/img/plus.svg) no-repeat 95% 0% !important
    .sliders_control
       order: 2
       margin-top: 24px
+   .set
+      width: 98%
    .accordeon_1
       .panel__text
          height: 123px
@@ -1370,13 +1380,14 @@ input[type="range"]
    max-height: 0
    overflow: hidden
    margin-left: 0
-   transition: all 0.5s ease
+   transition: all 0s ease
 .panel__text, .panel__text2, .panel__text3, .panel__text4, .panel__text5, .panel__text6
    list-style-type: none
    padding-top: 0px
    max-width: 688px
    margin-top: 30px
    max-height: 390px
+   transition: all 0s ease
    overflow-y: auto
 .panel__info
    font-weight: 300
@@ -2024,7 +2035,7 @@ picture
    .accordeon__button 
       color: $black
       font-size: 21px
-      font-weight: 700;
+      font-weight: 700 
       line-height: normal
       padding-right: 60px
       width: 100%
@@ -2165,3 +2176,50 @@ picture
       font-size: 12px
 .menu-btn2, .menu2 
    display: none
+
+
+
+/*ACCORDION*/
+.accordion-container  
+   position: relative 
+   height: auto 
+   padding-bottom: 0px 
+   margin: 0px
+   z-index: 3 
+   max-width: 246px
+   width: 100%
+   .content
+      position: relative
+      width: 100%
+      height: auto
+      display: none
+      overflow: auto
+      height: auto
+      margin: 20px 0
+.set  
+   position: relative 
+   width: 100% 
+   height: auto 
+   padding-bottom: 20px
+   margin-bottom: 20px
+   border-bottom: 1px solid #000
+   &:last-child
+      padding-bottom: 0
+      margin-bottom: 0
+      border-bottom: none
+.set > a  
+   display: block 
+   text-decoration: none 
+   -webkit-transition: all 0.2s linear 
+   -moz-transition: all 0.2s linear 
+   transition: all 0.2s linear 
+   color: $black
+   font-size: 18px
+   font-weight: 600 
+   line-height: normal
+   padding-right: 60px
+   width: 100%
+   background: url(/img/plus.svg) no-repeat 100% 0% !important
+   background-size: 8% !important
+.set > a.active  
+   background: url(/img/minus.svg) no-repeat 100% 0% !important
