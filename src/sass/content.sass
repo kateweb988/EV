@@ -312,7 +312,7 @@ input:-moz-placeholder
       min-height: 185px
    &__box 
       margin-top: 153px
-      justify-content: space-between
+      justify-content: flex-start
       flex-wrap: wrap
    &__sale 
       display: flex
@@ -333,7 +333,7 @@ input:-moz-placeholder
    &__item
       border-radius: 20px
       width: 20.4%
-      margin-right: 0px
+      margin-right: 70px
       margin-bottom: 20px
       height: auto
       text-align: center
@@ -363,6 +363,10 @@ input:-moz-placeholder
             opacity: 1
          .pop__links
             opacity: 1
+      &:last-child
+         margin-right: 0
+      &:nth-child(4n)
+         margin-right: 0
    &__name
       line-height: 23px
       color: #20252d
@@ -425,6 +429,9 @@ input:-moz-placeholder
       font-weight: 400
       line-height: normal
       text-decoration-line: line-through
+   &__block 
+      display: block
+      opacity: 1 !important
    .tabs
       &__list 
          border-bottom: 1px solid rgb(225,225,225)
@@ -610,194 +617,6 @@ input:-moz-placeholder
 .slider 
    .slick-arrow
       display: none !important
-.card 
-   padding: 0px 0 40px
-   &__text 
-      color: #8A8C8E
-      font-size: 12px
-      margin: 18px 0 22px
-   &__info 
-      padding: 20px 0
-      border-top: 1px solid #E7E7E7
-      border-bottom: 1px solid #E7E7E7
-      justify-content: space-between
-      padding-right: 40px
-      margin-bottom: 34px
-   &__sum 
-      color: $black
-      font-size: 25px
-      font-weight: 500
-      line-height: normal
-   &__sub 
-      color: #8A8C8E
-      font-size: 11px
-   &__name 
-      font-size: 14px
-      margin-bottom: 18px
-      color: $black
-   &__link 
-      font-size: 14px
-      color: $black
-      padding-bottom: 5px
-      border-bottom: 1px dashed $black
-   &__row 
-      margin-bottom: 25px
-      flex-wrap: wrap
-      &_2 
-         .custom-checkbox + label
-            margin-right: 13px 
-            background-color: transparent !important
-            border: none !important
-            border-bottom: 3.5px solid #E7E7E7 !important
-            border-radius: 0px !important
-         .custom-checkbox:checked + label
-            border-bottom: 3.5px solid $black !important
-            color: $black !important
-         .calc__item
-            &:last-child
-               .custom-checkbox + label
-                  margin-right: 0
-   &__photos 
-      justify-content: space-between
-      flex-wrap: wrap
-      width: 100% 
-      max-width: 700px 
-      align-items: flex-end
-      img 
-         object-fit: contain
-         &:first-child
-            width: 100%
-            margin-bottom: 72px
-         &:nth-child(2), &:nth-child(3)
-            margin-bottom: 54px
-            width: 45%
-         &:nth-child(5), &:nth-child(4)
-            width: 45%
-   &__wrap
-      width: 100%
-      max-width: 492px
-      .pop__links
-         opacity: 1 !important
-         position: relative !important
-         top: 0 !important
-         left: 0 !important
-         right: 0 !important
-         bottom: 0 !important
-         justify-content: flex-start
-         margin-top: 50px
-         .pop__btn
-            width: 225px 
-            height: 57px
-         .pop__like
-            height: 57px
-            width: 57px
-   &__box 
-      justify-content: space-between
-      align-items: flex-start
-      margin: 60px 0 113px
-   .custom-checkbox 
-      position: absolute
-      z-index: -1
-      opacity: 0
-   .custom-checkbox+label 
-      display: flex
-      align-items: center
-      user-select: none
-      cursor: pointer
-      justify-content: center
-      background-color: white
-      width: 37px
-      height: 37px
-      margin-right: 13px
-      color: $black
-      border: 1px solid #E7E7E7
-      font-size: 14px
-      &:before 
-         display: none
-   .custom-checkbox:checked+label
-      background: $black
-      color: white
-      border: 1px solid  $black
-   .tabs__button
-      border: none
-      padding: 0
-      margin-right: 49px
-      color: #CACACA
-      font-size: 25px
-      font-weight: 700
-      line-height: normal
-      background: transparent
-      &:last-child
-         margin-right: 0
-      &[aria-selected="true"] 
-         color: $black
-   .tabs__container
-      margin-top: 40px
-      p 
-         color: #4A4A4A
-         font-size: 16px
-         font-weight: 300
-         line-height: 26px
-         margin-bottom: 10px
-         &:last-child
-            margin-bottom: 0
-   .tabs
-      margin-bottom: 80px
-   .swiper44, .swiper444
-      overflow: hidden
-      padding: 60px 0px
-      position: relative
-      left: 0px
-      margin-top: 40px
-      .swiper-slide
-         overflow: visible
-      .pop__item
-         width: 100%
-         &:after 
-            display: none
-   .swiper-button-prev44, .swiper-button-prev444
-      width: 39.635px
-      border: 2px solid #E4E4E4
-      height: 39.635px
-      display: flex
-      align-items: center
-      justify-content: center
-      border-radius: 50%
-   .swiper-button-next44,  .swiper-button-next444
-      width: 39.635px
-      border: 2px solid #E4E4E4
-      height: 39.635px
-      display: flex
-      align-items: center
-      justify-content: center
-      border-radius: 50%
-      z-index: 4
-   .autoplay-progress, .autoplay-progress2
-      width: 43px
-      z-index: 3
-      top: -2px
-      left: 50px
-      height: 43px
-      svg 
-         stroke: $black
-   &__line 
-      h2 
-         text-transform: uppercase
-         margin-right: 95px
-   &__arrows 
-      position: relative
-   &__last 
-      padding: 70px 0
-      border-top: 1px solid #F1F1F1
-      border-bottom: 1px solid #F1F1F1
-      .pop__box
-         margin-top: 90px
-      h2 
-         text-transform: uppercase
-      .pop__item:after 
-         display: none
-   .card__line_2
-      margin-top: 90px
 .card-none
    .card__item
       &:first-child
@@ -1088,6 +907,8 @@ input[type="range"]
    top: -5000px
    display: none
 .cat  
+   &__items 
+      width: 100%
    .accordion-container
       max-width: 100%
    .set > a.active
@@ -1218,7 +1039,11 @@ input[type="range"]
       position: relative
       top: 3px
    .pop__item
-      width: 27.4%
+      width: 27.8%
+      &:nth-child(4n)
+         margin-right: 70px
+      &:nth-child(3n)
+         margin-right: 0
    &__btn 
       margin-top: 40px
       width: 100%
@@ -2223,3 +2048,242 @@ picture
    background-size: 8% !important
 .set > a.active  
    background: url(/img/minus.svg) no-repeat 100% 0% !important
+.card 
+   padding: 0px 0 40px
+   &__text 
+      color: #8A8C8E
+      font-size: 12px
+      margin: 18px 0 22px
+   &__info 
+      padding: 20px 0
+      border-top: 1px solid #E7E7E7
+      border-bottom: 1px solid #E7E7E7
+      justify-content: space-between
+      padding-right: 40px
+      margin-bottom: 34px
+   &__sum 
+      color: $black
+      font-size: 25px
+      font-weight: 500
+      line-height: normal
+   &__sub 
+      color: #8A8C8E
+      font-size: 11px
+   &__name 
+      font-size: 14px
+      margin-bottom: 18px
+      color: $black
+   &__link 
+      font-size: 14px
+      color: $black
+      padding-bottom: 5px
+      border-bottom: 1px dashed $black
+   &__row 
+      margin-bottom: 25px
+      flex-wrap: wrap
+      &_2 
+         .custom-checkbox + label
+            margin-right: 13px 
+            background-color: transparent !important
+            border: none !important
+            border-bottom: 3.5px solid #E7E7E7 !important
+            border-radius: 0px !important
+         .custom-checkbox:checked + label
+            border-bottom: 3.5px solid $black !important
+            color: $black !important
+         .calc__item
+            &:last-child
+               .custom-checkbox + label
+                  margin-right: 0
+   &__photos 
+      justify-content: space-between
+      flex-wrap: wrap
+      width: 100% 
+      max-width: 700px 
+      align-items: flex-end
+      img 
+         object-fit: contain
+         &:first-child
+            width: 100%
+            margin-bottom: 72px
+         &:nth-child(2), &:nth-child(3)
+            margin-bottom: 54px
+            width: 45%
+         &:nth-child(5), &:nth-child(4)
+            width: 45%
+   &__wrap
+      width: 100%
+      max-width: 492px
+      .pop__links
+         opacity: 1 !important
+         position: relative !important
+         top: 0 !important
+         left: 0 !important
+         right: 0 !important
+         bottom: 0 !important
+         justify-content: flex-start
+         margin-top: 50px
+         .pop__btn
+            width: 225px 
+            height: 57px
+         .pop__like
+            height: 57px
+            width: 57px
+   &__box 
+      justify-content: space-between
+      align-items: flex-start
+      margin: 60px 0 113px
+   .custom-checkbox 
+      position: absolute
+      z-index: -1
+      opacity: 0
+   .tabs__button
+      border: none
+      padding: 0
+      margin-right: 49px
+      color: #CACACA
+      font-size: 25px
+      font-weight: 700
+      line-height: normal
+      background: transparent
+      &:last-child
+         margin-right: 0
+      &[aria-selected="true"] 
+         color: $black
+   .set 
+      border-bottom: none
+      position: initial
+   .set > a
+      margin-right: 13px 
+      background-color: transparent !important
+      border: none !important
+      border-bottom: 3.5px solid #E7E7E7 !important
+      border-radius: 0px !important
+      display: flex
+      align-items: center
+      width: 37px
+      text-align: center
+      padding-right: 0
+      opacity: 1 !important
+      font-weight: 400
+      padding-bottom: 7px
+      font-size: 14px
+      background: transparent !important
+      color: #000
+      justify-content: center
+      &.active 
+         border-bottom: 3.5px solid $black !important
+         color: $black !important
+      &:after 
+         display: none
+   .accordeon
+      padding-bottom: 0
+      margin: 0
+      margin-bottom: 30px
+      border-bottom: none
+      .accordeon__item
+         width: auto
+      .accordion-container
+         display: flex
+      .card__row
+         width: 100%
+      .content 
+         position: absolute
+         width: 388px
+         left: 0
+         top: 25px
+      .custom-checkbox+label 
+         display: flex
+         align-items: center
+         user-select: none
+         cursor: pointer
+         justify-content: center
+         background-color: white
+         width: 37px
+         height: 37px
+         max-width: 37px
+         box-sizing: border-box
+         margin-right: 13px
+         padding: 0.5px 0.5px 0 0
+         color: $black
+         border: 1px solid #E7E7E7 !important
+         font-size: 14px
+         &:before 
+            display: none
+      .custom-checkbox:checked+label
+         background: $black
+         color: white
+         border: 1px solid  $black !important
+   .tabs__container
+      margin-top: 40px
+      p 
+         color: #4A4A4A
+         font-size: 16px
+         font-weight: 300
+         line-height: 26px
+         margin-bottom: 10px
+         &:last-child
+            margin-bottom: 0
+   .tabs
+      margin-bottom: 80px
+   .swiper44, .swiper444
+      overflow: hidden
+      padding: 60px 0px
+      position: relative
+      left: 0px
+      margin-top: 40px
+      .swiper-slide
+         overflow: visible
+      .pop__item
+         width: 100%
+         &:after 
+            display: none
+   .swiper-button-prev44, .swiper-button-prev444
+      width: 39.635px
+      border: 2px solid #E4E4E4
+      height: 39.635px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+   .swiper-button-next44,  .swiper-button-next444
+      width: 39.635px
+      border: 2px solid #E4E4E4
+      height: 39.635px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      z-index: 4
+   .autoplay-progress, .autoplay-progress2
+      width: 43px
+      z-index: 3
+      top: -2px
+      left: 50px
+      height: 43px
+      svg 
+         stroke: $black
+   &__line 
+      h2 
+         text-transform: uppercase
+         margin-right: 95px
+   &__arrows 
+      position: relative
+   &__last 
+      padding: 70px 0
+      border-top: 1px solid #F1F1F1
+      border-bottom: 1px solid #F1F1F1
+      .pop__box
+         margin-top: 90px
+      h2 
+         text-transform: uppercase
+      .pop__item:after 
+         display: none
+   .card__line_2
+      margin-top: 90px
+   .calc__item.disabled
+      .custom-checkbox + label
+         border: 1px solid #E7E7E7 !important
+         background: #E7E7E7 !important
+         pointer-events: none  !important
+         color: #ABABAB !important

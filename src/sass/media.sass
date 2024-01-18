@@ -70,6 +70,8 @@
       padding: 49px 40px 58px 40px
    .card__photos
       max-width: 600px
+   .cat .pop__item 
+      width: 27.2%
 @media screen and (max-width: 1199px)
    .header__girl
       height: 500px 
@@ -180,6 +182,17 @@
       padding: 40px 0
    .page .info__bg_2 
       height: 178%
+   .pop__item
+      margin-right: 38px
+      width: 29.2%
+      &:nth-child(3n)
+         margin-right: 0
+      &:nth-child(4n)
+         margin-right: 38px
+   .pop 
+      .pop__box
+         position: relative
+         left: 20px
 @media ( max-width: 991px )
    input, textarea, select
       -webkit-appearance: none
@@ -222,6 +235,10 @@
       white-space: nowrap
    .pop__item
       width: 44%
+      margin-right: 0 !important
+   .pop__box
+      justify-content: space-between
+      left: 0 !important
    .info__item
       width: 43%
    .info__box h2 
@@ -398,7 +415,9 @@
    .card .swiper44 .swiper-slide, .card .swiper444 .swiper-slide
       z-index: 2
    .card .card__arrows
-      bottom: 20px
+      bottom: 60px
+   .card .card__line_2
+      margin-top: 60px
    .mob 
       display: block
    .mm 
@@ -560,8 +579,11 @@
    .pop__box
       margin-top: 78px
    .pop__pic
-      width: 90%
+      width: 100%
       min-height: 90px
+   .pop__block
+      width: 80%
+      margin: 0 auto
    .pop__name
       font-size: 11px
       font-weight: 700
@@ -601,7 +623,7 @@
       position: relative
       &:hover 
          .pop__info, .pop__block, .pop__name, .pop__text 
-            opacity: 0.2
+            opacity: 1
          .pop__links
             display: flex
    .pop__links
@@ -609,6 +631,7 @@
       bottom: 10px
       flex-direction: column-reverse
       left: 0
+      display: none !important
       width: 100%
    .pop__btn
       width: 100%
@@ -1019,3 +1042,10 @@
          border: none
          right: 7px
          bottom: 10px
+   .card .accordeon .content
+      width: 375px
+   .card .accordeon .custom-checkbox + label
+      width: 33px
+      height: 33px
+      max-width: 33px 
+      font-size: 13px
